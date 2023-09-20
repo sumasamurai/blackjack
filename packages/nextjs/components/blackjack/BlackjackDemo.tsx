@@ -40,7 +40,7 @@ export const BlackjackDemo = () => {
     listener: logs => {
       logs.map(log => {
         const { player, firstDealerCard, playerHand, playerScore, gameStatus } = log.args;
-        if (address === player) {
+        if (address == player) {
           console.log({ player, firstDealerCard, playerHand, playerScore, gameStatus });
 
           setIsActive(true);
@@ -86,7 +86,7 @@ export const BlackjackDemo = () => {
     listener: logs => {
       logs.map(log => {
         const { player, firstDealerCard, playerHand, playerScore, gameStatus } = log.args;
-        if (address === player) {
+        if (address == player) {
           console.log({ player, firstDealerCard, playerHand, playerScore, gameStatus });
 
           setPlayerScore(playerScore);
@@ -128,7 +128,7 @@ export const BlackjackDemo = () => {
     listener: logs => {
       logs.map(log => {
         const { player, playerHand, dealerHand, claimableAmount, dealerScore, playerScore, gameStatus } = log.args;
-        if (address === player) {
+        if (address == player) {
           console.log({ player, playerHand, dealerHand, claimableAmount, dealerScore, playerScore, gameStatus });
 
           setIsActive(false);
@@ -175,7 +175,7 @@ export const BlackjackDemo = () => {
     listener: logs => {
       logs.map(log => {
         const { player, claimableAmount } = log.args;
-        if (address === player) {
+        if (address == player) {
           setClaimableAmount(Number(claimableAmount));
         }
       });
