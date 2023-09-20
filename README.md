@@ -13,7 +13,7 @@
 - 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
 - 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
 
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/1171422a-0ce4-4203-bcd4-d2d1941d198b)
+![Debug Contracts tab](https://raw.githubusercontent.com/sumasamurai/blackjack/6164d5c8ee9fe0818d592f4f39551adf7d854fe1/packages/nextjs/public/assets/preview.png)
 
 ## Requirements
 
