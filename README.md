@@ -4,6 +4,10 @@
 
 The "Blackjack DEMO" project is an implementation of the popular card game Blackjack (or "21") on the Ethereum blockchain using Solidity. This project utilizes the Scaffold-ETH 2 for decentralized application development and features a user-friendly frontend built with TypeScript and Next.js.
 
+## Demo
+
+Try out the game in the Sepolia testnet environment! [Demo Blackjack Game](https://blackjack-demo.vercel.app/)
+
 ## Features
 
 - **Decentralized Gameplay**: Enjoy a decentralized Blackjack experience on the Ethereum blockchain, allowing players to participate without intermediaries.
