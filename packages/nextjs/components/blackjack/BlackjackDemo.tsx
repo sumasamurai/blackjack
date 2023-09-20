@@ -41,6 +41,8 @@ export const BlackjackDemo = () => {
       logs.map(log => {
         const { player, firstDealerCard, playerHand, playerScore, gameStatus } = log.args;
         if (address === player) {
+          console.log({ player, firstDealerCard, playerHand, playerScore, gameStatus });
+
           setIsActive(true);
           setDealerScore("?");
           setPlayerScore(playerScore);
@@ -85,6 +87,8 @@ export const BlackjackDemo = () => {
       logs.map(log => {
         const { player, firstDealerCard, playerHand, playerScore, gameStatus } = log.args;
         if (address === player) {
+          console.log({ player, firstDealerCard, playerHand, playerScore, gameStatus });
+
           setPlayerScore(playerScore);
           setNewGameStatus(gameStatus);
 
@@ -125,6 +129,8 @@ export const BlackjackDemo = () => {
       logs.map(log => {
         const { player, playerHand, dealerHand, claimableAmount, dealerScore, playerScore, gameStatus } = log.args;
         if (address === player) {
+          console.log({ player, playerHand, dealerHand, claimableAmount, dealerScore, playerScore, gameStatus });
+
           setIsActive(false);
           setPlayerScore(playerScore);
           setDealerScore(dealerScore);

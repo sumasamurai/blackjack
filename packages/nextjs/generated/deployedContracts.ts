@@ -1,11 +1,11 @@
 const contracts = {
-  11155111: [
+  31337: [
     {
-      chainId: "11155111",
-      name: "sepolia",
+      chainId: "31337",
+      name: "localhost",
       contracts: {
         BlackjackDemo: {
-          address: "0x679b75A6DDCDb1025a179D1eCF5F5be28736455B",
+          address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
           abi: [
             {
               inputs: [
