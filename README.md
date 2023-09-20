@@ -1,5 +1,19 @@
 # Blackjack DEMO
 
+## Overview
+
+The "Blackjack DEMO" project is an implementation of the popular card game Blackjack (or "21") on the Ethereum blockchain using Solidity. This project utilizes the Scaffold-ETH 2 for decentralized application development and features a user-friendly frontend built with TypeScript and Next.js.
+
+## Features
+
+- **Decentralized Gameplay**: Enjoy a decentralized Blackjack experience on the Ethereum blockchain, allowing players to participate without intermediaries.
+
+- **Betting and Winning in ETH**: Players can place bets and potentially win cryptocurrency, adding an extra layer of excitement to the game.
+
+- **User-Friendly Interface**: The project offers an adaptive user interface built with Next.js and TypeScript, ensuring a seamless and enjoyable gaming experience.
+
+- **Secure Smart Contracts**: The game is implemented using Solidity smart contracts to ensure the security and reliability of gameplay.
+
 <h4 align="center">
   <a href="https://docs.scaffoldeth.io">Documentation</a> |
   <a href="https://scaffoldeth.io">Website</a>
