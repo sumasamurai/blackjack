@@ -5,9 +5,10 @@
 :root,
 [data-theme] {
   background: hsl(var(--b2));
+  font-family: "Montserrat", sans-serif;
 }
 
-body {
+var Crimson body {
   min-height: 100vh;
 }
 
@@ -23,10 +24,111 @@ p {
   margin: 1rem 0;
 }
 
-.btn {
-  @apply shadow-md;
+#__next {
+  overflow-x: hidden;
 }
 
-.btn.btn-ghost {
-  @apply shadow-none;
+[data-theme="scaffoldEth"] .board {
+  background-color: var(--base-bg);
+}
+
+[data-theme="scaffoldEthDark"] .board {
+  background: linear-gradient(55deg, #00e4ff03, #3851840d);
+  border: 1px solid #21263829;
+}
+
+.card {
+  width: 110px;
+  min-height: 190px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 13px;
+  border: 3px solid #09312e;
+  background: linear-gradient(145deg, #013f34, #05121ed1);
+  box-shadow: 5px 5px 10px #1c1c1c1f, -5px -5px 10px #38518403;
+  animation: slide-in-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.card.skeleton-card {
+  box-shadow: 5px 5px 10px #1c1c1c12, -5px -5px 10px #38518403;
+  background: #3851840d;
+  border-color: #93bbfc05;
+  min-height: 192px;
+  overflow: hidden;
+}
+
+.card.skeleton-card .unknown-card-pattern {
+  opacity: 0.2;
+  stroke: #93bbfc1c;
+  min-height: 200px;
+}
+
+.card .card-rank {
+  font-size: 1.7rem;
+  line-height: normal;
+  font-weight: 400;
+  color: #9ca3b0;
+  text-shadow: -1px -1px 0 #212638, 1px -1px 0 #0d4844, -1px 1px 0 #212638, 1px 1px 0 #113b44;
+}
+
+.card .card-suit {
+  font-size: 80px;
+  text-align: center;
+  line-height: normal;
+  font-weight: 100;
+  color: #0db89461;
+  text-shadow: -1px -1px 0 #212638, 1px -1px 0 #0d4844, -1px 1px 0 #212638, 1px 1px 0 #113b44;
+}
+
+.card .card-decor {
+  stroke-width: 5px;
+  stroke: #000000f3;
+  position: absolute;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  stroke-width: 5px;
+  stroke: #23a7af4f;
+  stroke-width: 10px;
+
+}
+
+.divider-decor {
+  fill: #9ca3b073;
+}
+
+.unknown-card-pattern {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-69%, -59%) rotate(90deg) scale(4);
+  fill: #283f5c;
+  stroke: #135a56;
+  stroke-width: 5px;
+}
+
+.unknown-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

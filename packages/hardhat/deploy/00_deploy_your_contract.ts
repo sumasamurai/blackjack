@@ -21,7 +21,12 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
 
-  await deploy("YourContract", {
+  const vrfCoordinator = "0x8103b0a8a00be2ddc778e6e7eaa21791cd364625";
+  const linkToken = "0x779877a7b0d9e8603169ddbd7836e478b4624789";
+  const keyHash = "0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c";
+  const fee = 30;
+
+  await deploy("BlackjackDemo", {
     from: deployer,
     // Contract constructor arguments
     args: [deployer],
@@ -30,13 +35,10 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
     // automatically mining the contract deployment transaction. There is no effect on live networks.
     autoMine: true,
   });
-
-  // Get the deployed contract
-  // const yourContract = await hre.ethers.getContract("YourContract", deployer);
 };
 
 export default deployYourContract;
 
 // Tags are useful if you have multiple deploy files and only want to run one of them.
 // e.g. yarn deploy --tags YourContract
-deployYourContract.tags = ["YourContract"];
+deployYourContract.tags = ["BlackjackDemo"];

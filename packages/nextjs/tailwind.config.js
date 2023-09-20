@@ -8,6 +8,13 @@ module.exports = {
     themes: [
       {
         scaffoldEth: {
+          "--base-bg": "#dbe9ff",
+          "--contrast-color": "#000",
+          "--primary": "#93BBFB",
+          "--bg-card": "#000",
+          "--bg-wrap": "#242730",
+          "--primary-hover": "#03c88e",
+          "--action-hover": "#03c88e",
           primary: "#93BBFB",
           "primary-content": "#212638",
           secondary: "#DAE8FF",
@@ -34,6 +41,10 @@ module.exports = {
       },
       {
         scaffoldEthDark: {
+          "--board-color": "#013f34",
+          "--bg-wrap": "#242730",
+          "--bg-content": "#0e0f12",
+          "--primary": "#212638",
           primary: "#212638",
           "primary-content": "#F9FBFF",
           secondary: "#323f61",
@@ -92,6 +103,16 @@ module.exports = {
     extend: {
       fontFamily: {
         "bai-jamjuree": ["Bai Jamjuree", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      boxShadow: {
+        center: "0 0 12px -2px rgb(0 0 0 / 0.05)",
+        custom: "5px 5px 10px #505354ab, -5px -5px 10px #0d290c36",
+      },
+      textColor: {
+        "in-progress": "#bcbd8e73",
+        win: "#24b721",
+        lose: "#f92218",
       },
       keyframes: {
         grow: {
@@ -112,6 +133,19 @@ module.exports = {
         "pulse-fast": "pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         zoom: "zoom 1s ease infinite",
       },
+      minWidth: {
+        175: "175px",
+      },
+      minHeight: {
+        190: "190px",
+      },
+      fontSize: {
+        20: "20px",
+      },
+      letterSpacing: {
+        3: "3px", // Додайте цю стрічку для підтримки 'tracking-3px'
+      },
+      darkmode: "class",
     },
   },
 };
