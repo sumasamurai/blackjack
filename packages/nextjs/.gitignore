@@ -36,3 +36,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# deployed contracts
+packages/nextjs/generated/deployedContracts.ts
