@@ -15,7 +15,7 @@ export const SkeletonCard = () => (
   </>
 );
 
-export const Card = ({ data }) => (
+export const Card = ({ data }: any) => (
   <div className="card slide-in-right">
     <CardDecor className="card-decor" />
     <div className="card-rank">{getValueByIndex(data[0], RANKS)}</div>
