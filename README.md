@@ -31,7 +31,7 @@ To get started Blackjack DEMO with Scaffold-ETH 2, follow the steps below:
 
 ```
 git clone https://github.com/sumasamurai/blackjack.git
-cd blackjack
+cd blackjack-main
 yarn install
 ```
 
